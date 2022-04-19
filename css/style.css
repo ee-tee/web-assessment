@@ -1,0 +1,465 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #989898;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* --------------General CSS Style-------------- */
+
+h1 { font-size: 30px; font-weight: bold;}
+h2 { font-size: 24px; }
+h3 { font-size: 22px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+
+h1, h2, h3, h4, h5 {
+    color: #4F4F4F;
+}
+
+.fixed-top {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: #FFFFFF;
+    z-index: 999; 
+}
+
+.nav-hover-bold a:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.box-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.6);
+    background-color: #DDDDDD;
+    cursor: pointer;
+}
+
+.button-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.6);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* -----------------Body Sections---------------- */
+
+/* Header Nav Bar */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 64px;
+    padding: 0 24px;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 32px;
+}
+
+.colmar > h5 {
+    color: #01161E;
+}
+
+.academy > h5 {
+    color: #9F9B9B;
+}
+
+.header-nav {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-end;
+}
+
+.header-nav > a {
+    text-decoration: none;
+    padding-left: 16px;
+}
+
+.header-nav > a :hover {
+    color:seagreen;
+    transform: scale(1.05);
+}
+
+.header-icon {
+    display: none;
+}
+
+/* Introduction Section */
+
+.introduction {
+    background-color: #DDDDDD;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 64px;
+}
+
+.intro-banner {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.intro-main {
+    text-align: left;
+}
+
+.intro-main > h4 {
+    margin-top: 16px;
+}
+
+.start-button {
+    background-color: #555555;
+    width: 60%;
+    padding: 1px;
+    margin-top: 8px;
+}
+
+.start-button > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Information Section */
+
+.information {
+    background-color: #FFFFFF;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+}
+
+.info-main {
+    width: 60%;
+    margin: 32px 24px;    
+}
+
+.info-quote > h2 {
+    margin-bottom: 24px;
+}
+
+.info-side {
+    width: 40%;
+    margin: 32px 24px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+}
+
+.info-box img {
+    display: inline-block;
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+#img-orientation-mobile, #img-campus-mobile, #img-guestlecturer-mobile {
+    display: none;
+}
+
+.info-more > a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Courses Section */
+
+.courses {
+    background-color: #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 72px;
+}
+
+.course-header {
+    margin-bottom: 32px;
+}
+
+.course-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course-box {
+    flex-basis: 30%;
+    background-color: #FFFFFF;
+    margin-bottom: 32px;
+    border: 1px solid #DDDDDD;
+}
+
+.course-box img {
+    width: 100%;
+    height: auto;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin: 16px 16px 24px 16px;
+}
+
+.course-info > a {
+    text-decoration: none;
+}
+
+.course-module {
+    margin-top: 16px;
+}
+
+/* Thesis Exhibits Section */
+
+.thesis {
+    background-color: #FFFFFF;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+}
+
+.thesis-header {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.thesis-main {
+    width: 60%;
+    margin: 32px 24px;    
+}
+
+.thesis-quote {
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-bottom: 32px;
+}
+
+.thesis-quote > h2 {
+    margin-bottom: 15px;
+}
+
+.thesis-side {
+    width: 40%;
+    margin: 32px 24px 32px 0;
+}
+
+.thesis-box {
+    display: flex;
+    align-items: center;
+}
+
+.thesis-box img {
+    display: inline-block;
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+.thesis-info > a {
+    text-decoration: none;
+}
+
+/* Footer Section */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #989898;
+    width: 100%;
+    height: 64px;
+    padding: 16px 24px 16px 24px;
+}
+
+.footer span {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-start;
+}
+
+.footer-nav {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-end;
+}
+
+.footer-nav > a {
+    text-decoration: none;
+    color: #989898;
+    font-size: 16px;
+    padding-left: 16px;
+}
+
+/* --------------------Responsive------------------- */
+
+/* Switch to mobile view at 720px width */
+
+@media screen and (max-width:720px) {
+
+    .header-logo, .header-nav, .info-main, .thesis-quote, .thesis-side {
+        display: none;
+    }
+
+    /* Header Nav Bar */
+
+    .header, .introduction {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .header-icon > a {
+        padding: 10px 50px;
+    }
+
+    .header-icon > a:hover {
+        transform: scale(1.5);
+    }
+
+    /* Introduction Section */
+
+    .intro-banner {
+        width: 100%;
+        margin: 0;
+    }
+
+    .intro-main {
+        text-align: justify;
+        margin: 16px 0 32px 0;
+    }
+
+    .intro-main > h4 {
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    .start-button {
+        margin: auto;
+    }
+
+    /* Information Section */
+
+    .information {
+        background-color: #FFFFFF;
+        display: flex;
+        text-align: left;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .info-side {
+        width: 100%;
+        margin: 32px;
+    }
+    
+    .info-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-more {
+        margin: 16px 16px 32px 16px;
+    }
+
+    .info-more h3 {
+        margin-bottom: 16px;
+    }
+
+    .info-more a {
+        margin-top: 8px;
+    }
+
+    #img-orientation-desktop, #img-campus-desktop, #img-guestlecturer-desktop {
+        display: none;
+    }
+
+    #img-orientation-mobile, #img-campus-mobile, #img-guestlecturer-mobile {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Courses Section */
+
+    .courses {
+        background-color: #FFFFFF;
+    }
+
+    .course-header {
+        margin: 0;
+    }
+
+    .course-main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .course-box {
+        background-color: #DDDDDD;
+        width: 100%;
+        text-align: center;
+        margin: 16px 0 16px 0;
+        padding: 0px 100px;
+    }
+    
+    .course-box img, .course-box span {
+        display: none;
+    }
+
+    .course-info {
+        margin: 0;
+        text-align: center;
+    }
+    
+    /* Thesis Exhibits Section */
+
+    .thesis-main {
+        width: 100%;
+        margin: 32px 0;    
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 16px;
+    }
+
+}
